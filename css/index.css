@@ -1,0 +1,177 @@
+.container{
+    background-color: rgb(255, 206, 142);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.cabeza{
+    background-color: tomato;
+    grid-column: 1 / 8;
+    grid-row: 1/2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-de-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.nav-pricipal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: violet;
+    width: 80%;
+    height: 40%;
+
+}
+
+.seccion{
+    background-color: yellow;
+    grid-column: 1/7;
+    grid-row: 2/5;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.section-dos{
+    background-color: chartreuse;
+    grid-column: 1/7;
+    grid-row: 5/8;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.elementos{
+    background-color: crimson;
+    border: 5px solid black;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+
+}
+.aside{
+    background-color: blueviolet;
+    grid-column: 7/8;
+    grid-row: 2/8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+}
+
+.aside-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 70%;
+    
+}
+
+.aside-enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 80%;
+    
+}
+
+.pie-de-pagina{
+    background-color: aqua;
+    grid-column: 1/8;
+    grid-row:8/9 ;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+@media (min-width:300px) and (max-width:600px){
+
+    .titulo-de-pagina{
+        margin: auto;
+    }
+    .cabeza{
+        background-color: chocolate;
+        display: flex;
+        flex-wrap: wrap;
+           
+    }
+
+    .nav-pricipal{
+        background-color: springgreen; 
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .seccion{
+        background-color: aqua;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .section-dos{
+        grid-column: 1/8;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aside{
+        grid-row: 2/5;
+    }
+    
+
+    .pie-de-pagina{
+        display: flex;
+        
+
+    }
+}
+
+@media (min-width:602px) and (max-width:900px){
+  
+    .cabeza{
+        background-color: crimson;
+        
+    }
+
+    .nav-pricipal{
+        margin: auto;
+        width: 50%;
+    }
+
+
+}
+
+
